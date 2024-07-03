@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@media (max-width: 561px) {
+
+    .cursor-dot,
+    .cursor-outline {
+        display: none;
+    }
+
+    header {
+        position: absolute;
+        width: auto;
+        left: 0%;
+    }
+
+    header.rolagem {
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+    }
+
+    #itens {
+        display: none;
+    }
+
+
+
+
+
+    main {
+        position: relative;
+        margin-right: 1%;
+    }
+
+
+
+
+
+    #home {
+        padding-right: 10%;
+    }
+
+
+
+
+
+    #divAboutMeContainer {
+        text-align: center;
+        flex-direction: column;
+        margin-bottom: 20%;
+    }
+
+    #divAboutMe {
+        margin-top: 15%;
+        margin-right: 1%;
+    }
+
+    #imageSky {
+        position: relative;
+        top: 0;
+        left: 5%;
+    }
+
+    #myPhoto {
+        position: relative;
+        top: -90%;
+        left: 6%;
+    }
+}

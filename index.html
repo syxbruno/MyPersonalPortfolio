@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link class="refreshStyleSheet" rel="stylesheet" href="mediaquery.css">
+</head>
+<body onload="loading()">
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div id="loadingBody">
+        <span id="loading"></span>
+    </div>
+
+    <div id="beforeLoading">
+        <header id="header">
+            <nav id="navBarContainer">
+                <nav id="navBarFlex">
+
+                    <img src="image/sun.png" alt="sun or moon" height="17px" id="sunOrMoon" onclick="trocarImg()">
+
+                    <nav id="itens">
+                        <ul>
+                            <li><a href="#home">home</a></li>
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#skills">skills</a></li>
+                            <li><a href="#projects">projects</a></li>
+                        </ul>
+                    </nav>
+                </nav>
+            </nav>
+            
+        </header>
+
+        <main>
+            <section id="home">
+
+                <div id="divApresentacao">
+                    <div id="divShapes">
+                        <img src="image/imagecircle.png" alt="image shapes" height="30px" id="circle">
+                        <img src="image/imagesquare.png" alt="" height="30px" id="quadrado">
+                    </div>
+                    <h1>Hello, my name is Bruno</h1>
+                    <p>java developer</p>
+                </div>
+
+                <div class="scrollIndicator"></div>
+
+                <div id="divApresentacaoLista">
+                    <ul>
+                        <li><a id="mylinkone" target="_blank" href="mailto:syxbrunoo@gmail.com">syxbrunoo@gmail.com</a></li>
+                        <li><a id="mylinktwo" target="_blank" href="https://www.linkedin.com/in/syxbrunoo/">my linkedin</a></li>
+                        <li><a id="mylinktree" target="_blank" href="https://github.com/syxbruno">my github</a></li>
+                        <button class="myresume" id="mylinktree" target="_blank" href="https://drive.google.com/file/d/1DyKa42f9Amm_Du64lxka5oiz07GaMtwO/view?usp=drive_link">download cv</button>
+                    </ul>
+
+                    <div class="modal" id="modal">
+                        <div class="modal-content">
+                            <p>You will be directed to an external link on this website, can we continue?</p>
+
+                            <button id="confirmButton">yes</button>
+                            <button id="cancelButton">no</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <div id="divAboutMeContainer">
+                    <div id="divAboutMePhoto">
+                        <img id="imageSky" src="image/imagesky.jpg" alt="sky image" height="220px">
+
+                        <img src="image/mypicture.png" alt="me picture" id="myPhoto" height="230px">
+                    </div>
+
+                    <div id="divAboutMe">
+                        <h2 class="title">ABOUT ME</h2>
+                        <p>my name is bruno oliveira and i currently study Systems Analysis and Development. since i can remember, i have always had contact with technology, whether in arcade games or video games and in video and photo editing. this contact made me interested in working with technology and here i am, studying at a university, taking courses on the side and acquiring knowledge in the area of software development. i couldn't be happier.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2 class="title">SKILLS</h2>
+                <div>
+                    <ul>
+                        <li><a href="#skills">Java</a></li>
+                        <li><a href="#skills">MySQL</a></li>
+                        <li><a href="#skills">Git</a></li>
+                        <li><a href="#skills">Html</a></li>
+                        <li><a href="#skills">Css</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="projects">
+                <div id="divProjects">
+                    <h2 class="title">PROJECTS</h2>
+                    <p>this section does not have any projects, it will be added as soon as a project is completed.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="portfolio.js"></script>
+
+</body>
+</html>

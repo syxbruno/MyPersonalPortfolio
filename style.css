@@ -1,0 +1,425 @@
+@charset "UTF-8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    scroll-behavior: smooth;
+    scroll-margin: 150px;
+}
+
+
+
+
+
+#beforeLoading {
+    display: none;
+}
+
+#loadingBody {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loading {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    display: block;
+    border: 9px solid #5271FF;
+    border-top: 9px solid transparent;
+    border-radius: 50%;
+
+    animation: loading 1s ease-in-out infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 200;
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.13);
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 20% auto;
+    text-align: center;
+    backdrop-filter: blur(4px);
+}
+
+.modal-content > p {
+    color: white;
+    padding: 10px;
+}
+
+button {
+    height: 25px;
+    width: 60px;
+    padding: 5px;
+    margin: 15px;
+    border: none;
+    border-radius: 7px;
+    background-image: linear-gradient(to right, #8d2ecc 25%, #5271FF);
+    background-size: 160% 100%;
+    color: rgba(255, 255, 255, 0.438);
+    transition: .3s ease-in-out;
+    animation: animatedGradient 2s infinite alternate;
+}
+
+@keyframes animatedGradient {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+button:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #5271FF;
+    border-radius: 5px;
+}
+
+
+
+
+
+:root {
+    --cor1: #ffffffee;
+    --cor2: #000000ef;
+    --cor3: #ffffffb4;
+    --cor4: #000000ad;
+
+    --cor5: rgba(255, 255, 255, 0.062);
+}
+
+.tema-dark {
+    --cor1: #000000ef;
+    --cor2: #ffffffee;
+    --cor3: #0000009d;
+    --cor4: #000000ad;
+
+    --cor5: rgba(0, 0, 0, 0.219);
+}
+
+
+
+
+
+body {
+    background-color: var(--cor2);
+    color: var(--cor1);
+    transition: .5s ease-in-out;
+}
+
+
+
+
+
+.cursor-dot {
+    width: 5px;
+    height: 5px;
+    background-color: var(--cor1);
+}
+
+.cursor-outline {
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--cor3);
+}
+
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+
+
+
+
+#iten {
+    display: block;
+}
+
+#navBarContainer {
+    max-width: 1280px;
+    margin: auto;
+}
+
+#navBarFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sunOrMoon {
+    cursor: pointer;
+}
+
+#iconMenu {
+    display: none;
+}
+
+header {
+    width: 84%;
+    padding: 40px 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s ease-in-out;
+    z-index: 10;
+}
+
+header.rolagem {
+    padding: 16px 8%;
+    background-color: var(--cor5);
+    backdrop-filter: blur(15px);
+}
+
+header ul > li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+li > a {
+    text-decoration: none;
+    color: var(--cor3);
+    transition: .25s ease-in-out;
+}
+
+li > a:hover {
+    color: var(--cor1);
+}
+
+
+
+
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40vh 8%;
+    margin-bottom: 10%;
+}
+
+#divApresentacao > p {
+    float: right;
+}
+
+#divShapes {
+    padding: 10px 0px;
+}
+
+#divShapes > img {
+    padding-right: 10px;
+}
+
+#circle {
+    transition: .5s ease-in-out;
+}
+#circle:hover {
+    transform: translateX(10px);
+}
+
+#quadrado {
+    transition: .5s ease-in-out;
+}
+#quadrado:hover {
+    transform: translateX(10px);
+}
+
+#divApresentacaoLista > ul > li {
+    list-style-type: none;
+    padding: 4px;
+}
+
+.myresume {
+    width: 110px;
+    height: 28px;
+    margin-left: 15%;
+
+    border: none;
+    border-radius: 7px;
+    background-image: linear-gradient(to right, #8d2ecc 25%, #5271FF);
+    background-size: 160% 100%;
+    color: rgba(255, 255, 255, 0.438);
+    transition: .3s ease-in-out;
+    animation: animatedGradient 2s infinite alternate;
+}
+
+.scrollIndicator {
+    top: 30vh;
+    width: 1.4em;
+    height: 2.6em;
+    border: 2px solid var(--cor1);
+    border-radius: 30px;
+    position: relative;
+    z-index: -1;
+}
+
+.scrollIndicator::before {
+    content: '';
+    width: 0.3em;
+    height: 0.3em;
+    border-radius: 50%;
+    background: #8d2ecc;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll 1.1s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        bottom: 70%;
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 10%;
+        opacity: 0;
+    }
+}
+
+
+
+
+
+#about {
+    padding: 0px 8%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#divAboutMe {
+    margin-bottom: 10%;
+}
+
+#divAboutMeContainer {
+    display: flex;
+    align-items: center;
+}
+
+#divAboutMePhoto {
+    height: 230px;
+    margin-left: 5%;
+    margin-right: 60px;
+    margin-bottom: 8%;
+    z-index: 1;
+}
+
+#imageSky {
+    position: relative;
+    border-radius: 3px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#myPhoto {
+    position: relative;
+    top: -85%;
+    left: 13%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.377);
+    backdrop-filter: blur(2px);
+    transition: .4s ease-in-out;
+    z-index: 1;
+}
+
+#myPhoto:hover {
+    top: -80%;
+}
+
+
+
+
+
+#skills {
+    padding: 0px 8%;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#skills ul > li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 40px 20px;
+}
+
+
+
+
+
+#projects {
+    padding: 0px 8%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#divProjects > h2 {
+    padding: 20px;
+}
+
+#divProjects > p {
+    padding: 10vh 8%;
+    text-align: center;
+}
+
+
+
+
+
+.title {
+    font-size: 20px;
+    color:  #5271FF;
+}
