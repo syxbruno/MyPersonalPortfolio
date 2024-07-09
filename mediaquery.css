@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-@media (max-width: 561px) {
-
+@media screen and (max-width: 710px) {
     .cursor-dot,
     .cursor-outline {
         display: none;
@@ -21,11 +20,9 @@
     #itens {
         display: none;
     }
+}
 
-
-
-
-
+@media screen and (max-width: 561px) {
     main {
         position: relative;
         margin-right: 1%;
@@ -64,5 +61,14 @@
         position: relative;
         top: -90%;
         left: 6%;
+    }
+
+
+
+
+
+    .container {
+        margin-left: 15%;
+        margin-bottom: 10px;
     }
 }

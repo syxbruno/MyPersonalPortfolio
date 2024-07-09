@@ -29,6 +29,7 @@
                             <li><a href="#about">about</a></li>
                             <li><a href="#skills">skills</a></li>
                             <li><a href="#projects">projects</a></li>
+                            <li><a id="navbarcertificates" href="#divCertificates">certificates</a></li>
                         </ul>
                     </nav>
                 </nav>
@@ -103,9 +104,53 @@
                 </div>
             </section>
         </main>
+
+        <footer>
+            <div id="divCertificates">
+                <h2 class="title" id="certificates">MY CERTIFICATES</h2>
+
+                <div class="container">
+                    <img class="imgcourse" height="65px" src="image/cursoemvideo.png" alt="img course">
+
+                    <div class="card">
+                        <div class="content">
+                            <h2>SQL</h2>
+                            <h3>MYSQL</h3>
+                            <p>The institution's MySQL course "Curso em Video" with Gustavo Guanabara offers an introduction to MySQL, covering installation, configuration, table creation, data manipulation, SQL queries, relationships, backup, restoration and optimization of databases.</p>
+
+                            <button class="view" id="mylinktree" target="_blank" href="https://drive.google.com/file/d/194P7q_N_lvJxUG9D7UP9_9irk2wLeZQe/view">VIEW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="imgcourse" height="65px" src="image/cursoemvideo.png" alt="img course">
+
+                    <div class="card">
+                        <div class="content">
+                            <h2>JAVA</h2>
+                            <h3>JAVA POO</h3>
+
+                            <p>The institution's Java OOP course "Curso em Video" with Gustavo Guanabara offers an introduction to object-oriented programming in Java, covering fundamental concepts, classes, objects, inheritance, polymorphism, encapsulation and development practices.</p>
+
+                            <button class="view" id="mylinktree" target="_blank" href="https://drive.google.com/file/d/1krZu9jB2gBIr_NZszqq4V6gkME6H9xAD/view">VIEW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script src="portfolio.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    
+    <script>
+	VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 0.5,
+	});
+    </script>
 
 </body>
 </html>
