@@ -114,12 +114,12 @@ button:hover {
 
 ::-webkit-scrollbar {
     width: 4px;
+    height: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #00bf63;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
+    background-color: var(--cor5);
+    border-radius: 5px;
 }
 
 
@@ -430,23 +430,23 @@ li > a:hover {
     padding: 20px;
 }
 
-.container {
+.scroll-x {
+    width: 100%;
+    margin: 4rem auto 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    float: left;
-    max-width: 1100px;
-    flex-wrap: wrap;
-    z-index: 1;
+
+    overflow-x: auto;
 }
+
+
+
+
 
 .container .card {
     position: relative;
     width: 240px;
     height: 300px;
     margin: 30px;
-    box-shadow: 0px 0px 50px var(--cor5);
     border-radius: 15px;
     background: var(--cor5);
     overflow: hidden;
