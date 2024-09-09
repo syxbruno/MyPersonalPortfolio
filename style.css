@@ -351,34 +351,13 @@ li > a:hover {
 }
 
 #divAboutMePhoto {
-    height: 230px;
     margin-left: 5%;
     margin-right: 60px;
     margin-bottom: 8%;
-    z-index: 1;
-}
-
-#imageSky {
-    position: relative;
-    border-radius: 3px;
-    top: 0;
-    left: 0;
-    z-index: 0;
 }
 
 #myPhoto {
-    position: relative;
-    top: -85%;
-    left: 13%;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.377);
-    backdrop-filter: blur(2px);
-    transition: .4s ease-in-out;
-    z-index: 1;
-}
-
-#myPhoto:hover {
-    top: -80%;
 }
 
 
