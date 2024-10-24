@@ -32,7 +32,7 @@
     height: 40px;
     background-color: transparent;
     display: block;
-    border: 9px solid #00bf63;
+    border: 9px solid #4B9CD3;
     border-top: 9px solid transparent;
     border-radius: 50%;
 
@@ -87,7 +87,7 @@ button {
     margin: 15px;
     border: none;
     border-radius: 7px;
-    background-image: linear-gradient(to right, #00bf63 50%, #41e093);
+    background-image: linear-gradient(to right, #4eabe9 50%, #4B9CD3);
     background-size: 160% 100%;
     color: rgba(255, 255, 255, 0.438);
     transition: .3s ease-in-out;
@@ -237,7 +237,7 @@ li > a {
 }
 
 li > a:hover {
-    color: var(--cor1);
+    color: #4eabe9;
 }
 
 
@@ -290,7 +290,7 @@ li > a:hover {
 
     border: none;
     border-radius: 7px;
-    background-image: linear-gradient(to right, #00bf63 50%, #41e093);
+    background-image: linear-gradient(to right, #4eabe9 50%, #4B9CD3);
     background-size: 160% 100%;
     color: rgba(255, 255, 255, 0.438);
     transition: .3s ease-in-out;
@@ -312,7 +312,7 @@ li > a:hover {
     width: 0.3em;
     height: 0.3em;
     border-radius: 50%;
-    background: #00bf63;
+    background: #4B9CD3;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
