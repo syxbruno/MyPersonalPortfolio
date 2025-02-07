@@ -22,4 +22,4 @@ This project is the first version of my portfolio, developed using HTML, CSS, an
 - **JavaScript**: Interactivity and dynamic functionalities.
 
 ## Visualization
-To see the final project, visit the following site: [syxbruno.github.io/portfolio/](https://syxbruno.github.io/portfolio/)
+To see the final project, visit the following site: [syxbruno.netlify.app](https://syxbruno.netlify.app)
