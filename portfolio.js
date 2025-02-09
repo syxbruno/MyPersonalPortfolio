@@ -8,6 +8,21 @@ window.addEventListener('scroll', function(){
 
 
 
+
+document.addEventListener("visibilitychange", function() {
+    if (document.hidden) {
+        document.title = "until later 😃";
+    } else {
+        document.title = "my portfolio";
+    }
+});
+
+
+ 
+
+
+
+
 let sunOrMoon = document.getElementById('sunOrMoon');
 
 function trocarImg() {
