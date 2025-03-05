@@ -13,8 +13,6 @@
 
 
 
-
-
 #beforeLoading {
     display: none;
 }
@@ -48,8 +46,6 @@
         transform: rotate(360deg);
     }
 }
-
-
 
 
 
@@ -110,8 +106,6 @@ button:hover {
 
 
 
-
-
 ::-webkit-scrollbar {
     width: 4px;
     height: 7px;
@@ -121,8 +115,6 @@ button:hover {
     background-color: var(--cor5);
     border-radius: 5px;
 }
-
-
 
 
 
@@ -146,15 +138,11 @@ button:hover {
 
 
 
-
-
 body {
     background-color: var(--cor2);
     color: var(--cor1);
     transition: .5s ease-in-out;
 }
-
-
 
 
 
@@ -183,20 +171,16 @@ body {
 
 
 
-
-
 #iten {
     display: block;
 }
 
 #navBarContainer {
-    max-width: 1280px;
-    margin: auto;
+    width: 85%;
 }
 
 #navBarFlex {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -209,7 +193,7 @@ body {
 }
 
 header {
-    width: 84%;
+    width: 100%;
     padding: 40px 8%;
     position: fixed;
     top: 0;
@@ -237,14 +221,13 @@ li > a {
 }
 
 li > a:hover {
-    color: #4eabe9;
+    color: var(--cor1);
 }
 
 
 
-
-
 #home {
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -278,21 +261,39 @@ li > a:hover {
     transform: translateX(10px);
 }
 
-#divApresentacaoLista > ul > li {
+#divApresentacaoLista {
+    text-align: center;
+}
+
+#divApresentacaoLista > ul > li {   
     list-style-type: none;
     padding: 4px;
 }
 
 .myresume {
-    width: 110px;
+    width: 130px;
     height: 28px;
-    margin-left: 15%;
+    margin-left: 11%;
 
     border: none;
     border-radius: 7px;
     background-image: linear-gradient(to right, #4eabe9 50%, #4B9CD3);
     background-size: 160% 100%;
-    color: rgba(255, 255, 255, 0.438);
+    color: rgba(255, 255, 255, 0.61);
+    transition: .3s ease-in-out;
+    animation: animatedGradient 2s infinite alternate;
+}
+
+.certificates {
+    width: 130px;
+    height: 28px;
+    margin-left: 11%;
+
+    border: none;
+    border-radius: 7px;
+    background-image: linear-gradient(to right, #4eabe9 50%, #4B9CD3);
+    background-size: 160% 100%;
+    color: rgba(255, 255, 255, 0.61);
     transition: .3s ease-in-out;
     animation: animatedGradient 2s infinite alternate;
 }
@@ -333,16 +334,20 @@ li > a:hover {
 
 
 
-
-
 #about {
     padding: 0px 8%;
     margin-top: 10%;
+    margin-left: 8%;
     margin-bottom: 10%;
 }
 
 #divAboutMe {
     margin-bottom: 10%;
+}
+
+#divAboutMe > p {
+    max-width: 100vh;
+    padding-top: 10px;
 }
 
 #divAboutMeContainer {
@@ -356,147 +361,60 @@ li > a:hover {
     margin-bottom: 8%;
 }
 
-#myPhoto {
-    border-radius: 5px;
+
+
+#skillsAndProjects {
+    background-image: linear-gradient(to right, #4eabe9 50%, #4B9CD3);
+    animation: animatedGradient 2s infinite alternate;
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#skillsAndProjects > section {
+    margin-top: 40px;
 }
 
 
 
-
-
-#skills {
-    padding: 0px 8%;
+#skills {   
     text-align: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
 }
 
 #skills ul > li {
     list-style-type: none;
     display: inline-block;
-    margin: 40px 20px;
+    margin: 40px 10px;
 }
-
-
 
 
 
 #projects {
-    padding: 0px 8%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-#divProjects > h2 {
-    padding: 20px;
+    text-align: center;
 }
 
 #divProjects > p {
-    padding: 10vh 8%;
+    margin: 20px 10px;
 }
 
 
 
-
-
-#divCertificates {
-    padding: 0px 8%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-#certificates {
-    padding: 20px;
-}
-
-.scroll-x {
-    width: 100%;
-    margin: 4rem auto 0 auto;
-    display: flex;
-
-    overflow-x: auto;
-}
-
-
-
-
-
-.container .card {
-    position: relative;
-    width: 240px;
-    height: 300px;
-    margin: 30px;
-    border-radius: 15px;
-    background: var(--cor5);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid var(--cor5);
-    border-left: 1px solid var(--cor5);
-    backdrop-filter: blur(5px);
-}
-
-.container .card .content {
-    padding: 20px;
+#contact {
     text-align: center;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 0.7s;
+    width: 99%;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 
-.container .card:hover .content {
-    transform: translateY(0px);
-    opacity: 1;
+#contact ul > li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 20px 20px;
 }
-
-.container .card .content h2 {
-    position: absolute;
-    top: -30px;
-    left: 90px;
-    font-size: 5em;
-    color: var(--cor5);
-    pointer-events: none;
-}
-
-.container .card .content h3 {
-    padding: 20px;
-    font-size: 1.4em;
-    color: var(--cor1);
-    z-index: 1;
-}
-
-.container .card .content p {
-    color: var(--cor1);
-    font-weight: 300;
-}
-
-.container .imgcourse {
-    border-radius: 30px;
-    position: absolute;
-    z-index: 1;
-    transform: scale(1);
-    opacity: 1;
-    transition: 0.5s;
-}
-
-.container:hover .imgcourse {
-    border-radius: 70px;
-    transform: scale(0.5);
-    opacity: 0;
-}
-
-.view {
-    margin-top: 30px;
-    height: 30px;
-    width: 80px;
-}
-
-
 
 
 
 .title {
     font-size: 20px;
-    color:  var(--cor1);
 }
